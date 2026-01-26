@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofias portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9976141fb6.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="circle"></div>
+    <nav>
+        <div class="logo">Sofias <span>portfolio</span></div>
+            <ul id="sidemenu">
+                    <li><a href="#header">Hem</a></li>
+                    <li><a href="#about">Om mig</a></li>
+                    <li><a href="#services">Roller</a></li>
+                    <li><a href="#portfolio">Projekt</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+  <div id="header">
+  <div class="container1">
+    <div class="intro-text">
+      Befinner mig i gränslandet mellan teknik, design 
+      och lärande – alltid med människan i centrum.
+    </div>
+    <div class="dynamic-wrapper">
+      <span class="static-part">Jag är </span>
+      <ul class="dynamic-txts">
+        <li><span>utvecklare.</span></li>
+        <li><span>pedagog.</span></li>
+        <li><span>designer.</span></li>
+        <li><span>innovatör.</span></li>
+      </ul>
+    </div>
+  </div>
+  <a href="#portfolio" class="btn">Se mina projekt</a>
+</div>
+
+    <!------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                            <img src="./bilder/Sofia.jpeg" class="base-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Om mig</h1>
+                    <p>Jag är en nyfiken och mångsidig utvecklare med bakgrund inom design av digitala 
+                        upplevelser. Under min utbildning har jag kombinerat teknisk kompetens med 
+                        mänskligt fokus – jag är både utvecklare, pedagog och användbarhetsdesigner.<br>
+                        <br>
+                        Det innebär att jag inte bara bygger digitala lösningar – jag förstår också hur 
+                        människor tänker, lär och interagerar med teknik. Oavsett om det handlar om att 
+                        koda en webbsida, leda ett projekt eller designa en tillgänglig användarupplevelse, 
+                        strävar jag alltid efter att skapa värde för användaren.</p> 
+               
+                <div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('skills', this)">Kompetens</p>
+    <p class="tab-links" onclick="opentab('experience', this)">Erfarenhet</p>
+    <p class="tab-links" onclick="opentab('education', this)">Utbildning</p>
+</div>
+
+<div class="tab-contents active-tab" id="skills">
+    <ul>
+       <li><span>Design & Prototyping</span><br>Figma, Canva</li>
+       <li><span>Webbteknologier</span><br>HTML/CSS, grundläggande JavaScript, Twine, A-Frame, Node.js (testat)</li>
+       <li><span>Multimedia</span><br>Bild-, ljud- och videoredigering</li>
+       <li><span>3D & Spelmotorer</span><br>Grundläggande kunskaper i Unreal Engine och Unity</li>
+       <li><span>Övriga verktyg</span><br>Git, Processing, Officepaketet</li>
+    </ul>          
+</div>
+
+<div class="tab-contents" id="experience">
+    <ul>
+        <li><span>2022 – 2024</span><br>Projekt under utbildningen <i>Design av digitala upplevelser för lärande</i> – interaktiva prototyper och användarfokuserad design</li>
+        <li><span>2024</span><br>Fristående kursprojekt inom webb, UX/UI och multimedia – utforskande av nya verktyg och tekniker</li>
+        <li><span>2025</span><br>Kandidatarbete i Medieteknik – utveckling av en interaktiv berättelse i Twine</li>
+    </ul>          
+</div>
+
+<div class="tab-contents" id="education">
+    <ul>
+        <li><span>2019</span><br>Kurs: Omsorg, sociala relationer och ledarskap - Malmö universitet</li>
+        <li><span>2019</span><br>Kurs: Barndom och lärande, barns mångsidiga utveckling - Malmö universitet</li>
+        <li><span>2019</span><br>Kurs: Barndom och lärande, pedagogik i förskolan - Malmö universitet</li>
+        <li><span>2022</span><br>Kurs: Barnsspråkutveckling - Stockholms universitet</li>
+        <li><span>2022 - 2024</span><br>Program: Design av digitala upplevelser för lärande – Blekinge tekniska högskola</li>
+        <li><span>2024</span><br>Kurs: Ljuddesign för film - Blekinge tekniska högskola</li>
+        <li><span>2024</span><br>Kurs: Generativ bild - Blekinge tekniska högskola</li>
+        <li><span>2024</span><br>Kurs: Forskningsintroduktion Medieteknik - Blekinge tekniska högskola</li>
+        <li><span>2025</span><br>Kandidatexamen i Medieteknik – Blekinge tekniska högskola</li>
+    </ul>          
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <!------------services------------>
+    <div id="services">
+    <div class="container">
+        <h1 class="sub-title">Mina roller</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Webbutveckling</h2>
+                <p>Jag tycker om att förvandla idéer och prototyper till fungerande 
+                    webbplatser och applikationer. Med kunskaper i HTML, CSS och 
+                    JavaScript kan jag bygga gränssnitt som är både responsiva och 
+                    tillgängliga. Även om jag inte ser mig som en fullfjädrad utvecklare än, 
+                    gillar jag att kombinera kod och design för att skapa helhetslösningar.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX-design</h2>
+                <p>Jag brinner för att skapa användarvänliga och visuellt tilltalande gränssnitt. 
+                    I Figma arbetar jag gärna med wireframes, prototyper och designsystem för att 
+                    säkerställa att användaren alltid står i centrum. Feedback och användartester 
+                    är viktiga verktyg i mitt arbete.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-people-group"></i>
+                <h2>Pedagogik & samarbete</h2>
+                <p>Min bakgrund inom pedagogik ger mig ett särskilt perspektiv på hur människor 
+                    lär sig och tar till sig information. Jag är bra på att förklara komplexa idéer 
+                    på ett sätt som gör dem enkla att förstå och trivs i roller där jag får bidra med 
+                    tydlighet och stöd – både för användare och i team. Jag tycker också om att arbeta 
+                    i grupp där olika kompetenser möts och tillsammans driver projekt framåt.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------portfolio---------------->
+  
+ <div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">Mina projekt</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="./bilder/background.jpg" alt="">
+        <div class="info">
+          <h2>Programmering & design i Twine</h2>
+            <h3>Kims mystifika upptäckter</h3>
+          <p>För projektet Kims mystiska upptäckter ville vi utforska hur interaktiva berättelser kan öka barns motivation 
+            till lärande. Projektet genomfördes inom kursen Självständigt arbete i digitalt lärande och resulterade i tre 
+            berättelser där läsaren följer kompisen Kim genom en fantasiportal fylld av spännande upplevelser och lärande.
+              <br><br>
+              Jag ansvarade för programmering och design i Twine, samt efterbearbetning av texterna. Genom att bygga den 
+              interaktiva strukturen och logiken kunde berättelserna förändras beroende på läsarens val
+              <br><br>
+              Min roll var programmering och design i Twine, samt efterbearbetning av texterna. Jag ansvarade för att 
+              bygga den interaktiva strukturen och logiken som gör att berättelserna förändras beroende på läsarens val.
+              <br><br>
+              Projektet belönades med ett stipendium från Sparbanksstiftelsen, ett värdefullt kvitto på att berättelserna 
+              fungerar och uppskattas. Nedan kan du se filmer på berättelserna.
+            </p>
+
+          <a href="#" class="video-link" data-video="/filmer/Autum.mp4">Kapitel 1 - Skogens hemligheter <i class="fa-solid fa-up-right-from-square"></i></a>
+          <br>
+          <a href="#" class="video-link" data-video="/filmer/Winter.mp4">Kapitel 2 - Vinterkul i Tomteland <i class="fa-solid fa-up-right-from-square"></i></a>
+<br>
+<a href="#" class="video-link" data-video="/filmer/Spring.mp4">Kapitel 3 - De saknade kristallerna <i class="fa-solid fa-up-right-from-square"></i></a>
+</div>
+      </div>
+      <div class="work">
+        <img src="./bilder/nature.jpg" alt="">
+        <div class="info">
+          <h2>Prototypdesign i Figma</h2>
+            <h3>Natur Fellow</h3>
+          <p>Att göra lärandet mer engagerande och lekfullt var utgångspunkten för Natur Fellow, ett koncept för en 
+            applikation som kombinerar AI och gamification. Projektet genomfördes inom kursen <em>Motivation till lärande</em> 
+            och syftade till att skapa en dynamisk undervisningsmiljö där elever aktivt deltar i sin egen kunskapsutveckling.
+            <br><br>
+           Min roll var att skapa en interaktiv prototyp i Figma. Prototypen gjorde det möjligt att visualisera applikationen, 
+           testa olika gränssnittslösningar och stegvis utforska upplevelsen, vilket gav värdefull feedback på design och 
+           funktionalitet. Här nedanför får du ett smakprov på prototypen.</p>
+          
+          <a href="#" class="video-link" data-video="/filmer/Nature fellow.mp4">Nature Fellow <i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="./bilder/helios.jpg" alt="">
+        <div class="info">
+         <h2>Prototypdesign i Figma</h2>
+          <h3>Helios</h3>
+<p>
+  Med målet att göra skolvardagen mer tillgänglig och engagerande för barn i åldern 6–9 år utvecklade vi Helios, en 
+  lärplattform som kombinerar struktur och pedagogiskt stöd med ett lekfullt och intuitivt gränssnitt. Projektet 
+  genomfördes inom kursen <em>Digital didaktisk design</em> och fokuserade på att främja delaktighet och inflytande 
+  i elevernas lärprocess.
+  <br><br>
+  Jag ansvarade för att skapa en interaktiv prototyp i Figma, med fokus på struktur, användarvänlighet och visuell 
+  design. Den klickbara prototypen gjorde det möjligt att testa olika flöden och gränssnittslösningar, vilket gav 
+  värdefull feedback på hur Helios kan fungera i praktiken. Nedan kan du testa prototypen av Helios.
+</p>
+
+          <a href="#" class="video-link" data-video="/filmer/Helios.mp4">Helios - prototyp <i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- Extra projekt -->
+      <div class="work hidden">
+        <img src="./bilder/virel.jpg" alt="">
+        <div class="info">
+          <h2>Programmering av gränssnitt</h2>
+            <h3>Virel (VR-prototyp)</h3>
+          <p>VR-prototypen Virel låter grundskoleelever utforska olika platser virtuellt, utan att behöva resa. Projektet 
+            genomfördes inom kursen <em>Produktion av digitala upplevelser</em> och gav mig erfarenhet av agil planering och 
+            samarbete i ett Scrum-team.
+            <br><br>
+            Min roll var programmering i HTML och CSS, med fokus på att skapa ett användarvänligt inloggningsgränssnitt i 
+            Visual Studio Code. Genom att prioritera enkelhet och tydlighet säkerställde jag en smidig start för användarna 
+            och lade grunden för en positiv upplevelse. Se filmen nedan för att upptäcka prototypen.</p>
+
+          <a href="#" class="video-link" data-video="/filmer/Virel.mp4">Virel - prototyp <i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+        <div class="work hidden">
+        <img src="./bilder/film.png" alt="">
+        <div class="info">
+          <h2>Ljuddesign</h2>
+          <h3>Tecknad & actionfilm</h3>
+          <p>Inom kursen Ljuddesign för film genomförde jag ett enskilt projekt 
+            där uppgiften var att ljudlägga två filmer, en tecknad och en actionfilm. 
+            Projektet gav mig värdefull erfarenhet av kreativ ljuddesign, ljudredigering 
+            och hur ljud kan förstärka filmens berättande och atmosfär.
+            <br><br>
+            Jag använde Logic för att bearbeta ljudspåren, skapa ljudeffekter och 
+            bygga upp filmens ljudmiljö. För att förstärka upplevelsen gjorde jag 
+            även egna inspelningar av ljud som integrerades i filmerna. Här nedan 
+            kan du se resultatet.</p>
+          
+          <a href="#" class="video-link" data-video="/filmer/tecknat.mp4">Ljudläggning - tecknad film <i class="fa-solid fa-up-right-from-square"></i></a>
+          <a href="#" class="video-link" data-video="/filmer/action.mp4">Ljudläggning - action film <i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+  <div class="work hidden">
+        <img src="./bilder/julkalender.png" alt="">
+        <div class="info">
+          <h2>Frontend-programmering</h2>
+            <h3>Interaktiv julkalender</h3>
+          <p>I kursen Digital prototyputveckling skapade vi en interaktiv julkalender med olika uppgifter och 
+            utmaningar för lågstadieelever att använda under december. Kalendern innehöll en blandning av 
+            kluriga uppgifter och rörelsebaserade aktiviteter, utformade för att vara både lärorika och roliga. 
+            <br><br>
+            Min roll var att programmera i HTML, CSS och JavaScript, samt att samarbeta med teamet genom GitHub 
+            för versionshantering. Arbetet gav mig praktisk erfarenhet av frontend-programmering, samarbete i 
+            kodmiljö och att skapa interaktiva lösningar anpassade för barn. Nedanför får du ett smakprov på 
+            hur julkalendern blev.</p>
+
+          <a href="#" class="video-link" data-video="/filmer/Julkalender.mp4">Julkalender <i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+<div class="work hidden">
+        <img src="./bilder/unicorn.jpg" alt="">
+        <div class="info">
+          <h2>Generativt skapande i Processing</h2>
+          <h3>Interaktiv affisch & tomtespel</h3>
+          <p>Under kursen Generativ bild arbetade jag med två projekt där fokus låg på att kombinera AI-genererade 
+            bilder med Processing. I det första projektet skapade jag en interaktiv affisch, och i det andra 
+            samarbetade jag med en kurskamrat för att utveckla ett julspel där målet var att samla så många julord 
+            som möjligt.
+             <br><br>
+            Min huvudsakliga uppgift i spelet var att utveckla spelmekaniken i Processing. Genom att väva samman 
+            interaktivitet med AI-genererade bilder bidrog jag till att skapa en lekfull och engagerande upplevelse.
+           </p>
+
+          <a href="#" class="video-link" data-video="/filmer/unicorn.mp4">Interaktiv affisch <i class="fa-solid fa-up-right-from-square"></i></a>
+          <br>
+          <a href="#" class="video-link" data-video="/filmer/santa.mp4">Tomtespelet <i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      
+      <!--  
+      <div class="work hidden">
+        <img src="./bilder/insight.jpg" alt="">
+        <div class="info">
+          <h2>Virel - res utan att resa</h2>
+          <p>I kursen Produktion av digitala upplevelser utvecklade jag tillsammans med teamet en VR-prototyp, 
+            Virel, som ger grundskoleelever möjlighet att utforska olika platser virtuellt, utan att behöva resa. 
+            Projektet genomfördes enligt Scrum-metodik, vilket gav värdefull erfarenhet av agil planering, 
+            strukturering och samarbete. 
+            <br><br>
+            Min roll var programmering, med särskilt fokus på att skapa ett 
+            användarvänligt gränssnitt för inloggningsdelen, vilket säkerställde en smidig och intuitiv start 
+            för användarna. Se filmen nedan för att uppleva prototypen.</p>
+          
+          <a href="#" class="video-link" data-video="/filmer/tecknat.mp4">Ljudläggning - tecknad film <i class="fa-solid fa-up-right-from-square"></i></a>
+          <a href="#" class="video-link" data-video="/filmer/action.mp4">Ljudläggning - action film <i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+-->
+    </div>
+
+    <a href="#" class="btn" id="toggleBtn">Se mer</a>
+  </div>
+</div>
+
+<!-------------------contact------------------->
+   <div id="contact">
+  <div class="container">
+    <h1 class="sub-title">Kontakta mig</h1>
+    <div class="row">
+      <div class="contact-right">
+        <form action="https://formsubmit.co/sofia.bjorkemyr@icloud.com" method="POST">
+          <input type="text" name="Name" placeholder="Ditt namn" required>
+          <input type="email" name="Email" placeholder="Din mail" required>
+          <textarea name="Message" rows="6" placeholder="Ditt meddelande"></textarea>
+          <input type="hidden" name="_captcha" value="false">
+          <button type="submit" class="btn btn2">Skicka</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <div class="copyright">
+            <p>Made by Sofia <i class="fa-solid fa-heart"></i></p>
+        </div>
+        
+    </div>
+    <div id="videoModal" class="modal" aria-hidden="true" role="dialog" aria-label="Videospelare">
+    <button class="close" aria-label="Stäng">✖</button>
+    <video id="modalVideo" playsinline controls preload="metadata"></video>
+  </div>
+
+   <script src="script.js" defer></script>
+</body>
+</html>
