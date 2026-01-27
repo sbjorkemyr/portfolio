@@ -190,7 +190,6 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 img:hover {
-    /* Filter-effekt för tecknad/kontur-look */
     filter: grayscale(0%);
     transform: scale(1.05); /* liten zoom-effekt (kan tas bort om du vill) */
 }
@@ -261,7 +260,7 @@ nav ul li a:hover::after {
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 20px;
+    gap: 30px;
 }
   
 .services-list div {
@@ -291,8 +290,8 @@ nav ul li a:hover::after {
 
 .work-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* alltid 3 kolumner */
-  
+  gap: 30px; /* Mellanrum mellan projekten */
+  grid-template-columns: 1fr; /* Standard: en kolumn (mobil först) */
 }
 
 .work {
@@ -303,7 +302,7 @@ nav ul li a:hover::after {
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-  max-height: 600px; /* 🔹 bestämd höjd på hela boxen */
+  max-height: 500px; /* 🔹 bestämd höjd på hela boxen */
   transition: transform 0.5s;
 }
 .work:hover {
@@ -458,27 +457,20 @@ nav .fa-solid {
   display: none;
 }
 
-
-/* === Mobil först (standard) === */
-.work-list {
-  display: grid;
-  grid-template-columns: 1fr; /* en kolumn som default */
-  gap: 20px;
-}
-
-/* === Små tablets / större mobiler === */
+/* Små tablets / större mobiler */
 @media (min-width: 600px) {
   .work-list {
     grid-template-columns: repeat(2, 1fr); /* två kolumner */
   }
 }
 
-/* === Tablets & desktops === */
+/* Tablets & desktops */
 @media (min-width: 900px) {
   .work-list {
     grid-template-columns: repeat(3, 1fr); /* tre kolumner */
   }
 }
+
 
 /* === Navigation för mobil === */
 @media (max-width: 870px) {
